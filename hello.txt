@@ -53,4 +53,5 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/kybimil/example1.git
    c7bf3b8..6755334  master -> master
 
+To use cmd or git bash
 성공했습니다.ㅎㅎ
