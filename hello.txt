@@ -43,7 +43,7 @@ C:\Users\admin\example1>git remote -v           #연결확인
 origin  https://github.com/kybimil/example1.git (fetch)
 origin  https://github.com/kybimil/example1.git (push)
 
-C:\Users\admin\example1>git push
+C:\Users\admin\example1>git push        #푸쉬기능
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
