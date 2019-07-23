@@ -1,0 +1,60 @@
+****깃허브 파일 올리는 시나리오 (cmd) ****
+****************************************
+
+C:\Users\admin>git clone https://github.com/kybimil/example1.git                                         #복사할때
+Cloning into 'example1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+C:\Users\admin>cd example1                                                                   #저장소 안에 들어가기
+
+C:\Users\admin\example1>git status                                                                      #확인
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\admin\example1>git add *                                                                #전체파일 추가
+
+C:\Users\admin\example1>git add hello.txt                                                  #hello라는 텍스트 추가
+fatal: pathspec 'hello.txt' did not match any files
+
+C:\Users\admin\example1>git add hello.txt                                                #hello라는 텍스트 추가
+
+C:\Users\admin\example1>git status                                                                     #확인
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   hello.txt
+
+
+C:\Users\admin\example1>git commit -m "Add hello.txt"                                               #커밋기능
+[master 6755334] Add hello.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+
+C:\Users\admin\example1>git remote add origin https://github.com/kybimil/example1.git            #리모트 기능
+fatal: remote origin already exists. 
+
+C:\Users\admin\example1>git remote -v                                                               #연결확인
+origin  https://github.com/kybimil/example1.git (fetch)
+origin  https://github.com/kybimil/example1.git (push)
+
+C:\Users\admin\example1>git push                                                                    #푸쉬기능
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kybimil/example1.git
+   c7bf3b8..6755334  master -> master
+
+To use cmd or git bash
+성공했습니다.ㅎㅎ
